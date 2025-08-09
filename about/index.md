@@ -28,8 +28,9 @@ permalink: /about/
     <ul class="contact-list">
       <li><a href="https://github.com/lkrv69" target="_blank" rel="noopener">GitHub</a></li>
       <li><a href="https://t.me/lkrv69" target="_blank" rel="noopener">Telegram</a></li>
-      <li><a href="mailto:ivan_lakieriev@ukr.net">mail@example.com</a></li>
-      <li><a href="/contacts/">Контакты →</a></li>
+      <li><a href="mailto:ivan_lakieriev@ukr.net">ivan_lakieriev@ukr.net</a></li>
+      <li><a href="mailto:work@lkrv69.com">work@lkrv69.com</a></li>
+      <li><a href="mailto:vpn@lkrv69.com">vpn@lkrv69.com</a></li>
     </ul>
   </aside>
 </div>
