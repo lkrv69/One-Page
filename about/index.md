@@ -5,8 +5,8 @@ permalink: /about/
 
 <div class="grid">
   <section class="section">
-    <h2>Обо мне</h2>
-    <p>Я — DevOps инженер с опытом в автоматизации, контейнерах, облаках и наблюдаемости. Люблю упрощать сложное и делать запуск фич предсказуемым.</p>
+    <h2>about me</h2>
+    <p>I DevOps инженер с опытом в автоматизации, контейнерах, облаках и наблюдаемости. Люблю упрощать сложное и делать запуск фич предсказуемым.</p>
     <h3>Навыки</h3>
     <ul class="tags">
       <li>Linux</li><li>Bash/Python</li><li>Docker/Compose</li><li>K8s/Helm</li>
@@ -19,16 +19,16 @@ permalink: /about/
   <aside class="section">
     <h2>Коротко</h2>
     <ul class="list">
-      <li>4+ лет в DevOps</li>
+      <li>8+ years in DevOps</li>
       <li>CI/CD, IaC, Observability</li>
-      <li>Люблю чистые пайплайны</li>
-      <li>Говорю RU/EN/UA</li>
+      <li>pipelines</li>
+      <li>speaking: RU/EN/UA</li>
     </ul>
     <h3>Ссылки</h3>
     <ul class="contact-list">
       <li><a href="https://github.com/lkrv69" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="https://t.me/username" target="_blank" rel="noopener">Telegram</a></li>
-      <li><a href="mailto:mail@example.com">mail@example.com</a></li>
+      <li><a href="https://t.me/lkrv69" target="_blank" rel="noopener">Telegram</a></li>
+      <li><a href="mailto:ivan_lakieriev@ukr.net">mail@example.com</a></li>
       <li><a href="/contacts/">Контакты →</a></li>
     </ul>
   </aside>
