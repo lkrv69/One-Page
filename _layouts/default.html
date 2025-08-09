@@ -17,10 +17,10 @@
     <nav>
       <button class="nav-toggle" aria-label="Меню" aria-expanded="false">☰</button>
       <div class="menu">
-        <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Главная</a>
-        <a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>О себе</a>
-        <a href="/contacts/" {% if page.url == "/contacts/" %}aria-current="page"{% endif %}>Контакты</a>
-        <a href="/news/" {% if page.url == "/news/" %}aria-current="page"{% endif %}>Новости</a>
+        <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Main</a>
+        <a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About me</a>
+        <a href="/contacts/" {% if page.url == "/contacts/" %}aria-current="page"{% endif %}>Contacts</a>
+        <a href="/news/" {% if page.url == "/news/" %}aria-current="page"{% endif %}>News</a>
       </div>
     </nav>
   </div>
@@ -29,7 +29,7 @@
   {{ content }}
 </main>
 <footer class="footer">
-  <div class="container">© <span id="y"></span> Иван Лакериев · DevOps · Docker · Kubernetes · AWS · Terraform</div>
+  <div class="container">© <span id="y"></span> Ivan Lakieriev · DevOps · Docker · Networking · AWS · Terraform</div>
 </footer>
 <script src="/assets/script.js"></script>
 <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
