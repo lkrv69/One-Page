@@ -1,7 +1,9 @@
 backend:
   name: github
-  repo: lkrv69/One-Page   # ⟵ замените на ИМЯ_ВАШЕГО_РЕПО
+  repo: lkrv69/One-Page           # <-- замени на owner/repo твоего сайта
   branch: main
+  base_url: https://decap-oauth.netlify.app
+  auth_endpoint: auth
 publish_mode: editorial_workflow
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
