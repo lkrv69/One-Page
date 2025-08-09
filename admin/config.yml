@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: lkrv69/site   # ⟵ замените на ИМЯ_ВАШЕГО_РЕПО
+  repo: lkrv69/One-Page   # ⟵ замените на ИМЯ_ВАШЕГО_РЕПО
   branch: main
 publish_mode: editorial_workflow
 media_folder: "assets/uploads"
