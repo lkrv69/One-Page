@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Иван Лакериев — DevOps</title>
+  <meta name="description" content="Личная страница DevOps инженера: CI/CD, Kubernetes, Terraform, AWS. Контакты и проекты."/>
+  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0ea5e9" />
+<link rel="icon" href="/assets/favicon.svg" />
+<link rel="stylesheet" href="/assets/style.css" />
+
+</head>
+<body>
+  
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="/"><div class="logo" aria-hidden="true">И</div><span>Иван Лакериев</span></a>
+    <nav>
+      <button class="nav-toggle" aria-label="Меню" aria-expanded="false">☰</button>
+      <div class="menu">
+        <a href="/" aria-current="page">Главная</a>
+        <a href="/about.html" >О себе</a>
+        <a href="/contacts.html" >Контакты</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="kicker">Привет! Я — DevOps инженер</p>
+        <h1>Делаю надёжные CI/CD и инфраструктуру как код</h1>
+        <p>Опыт с Docker, Kubernetes, Terraform, AWS/GCP/Azure, мониторинг (Prometheus, Grafana), GitLab CI/GitHub Actions.</p>
+        <div class="cta">
+          <a class="btn" href="/contacts.html">Связаться</a>
+          <a class="btn secondary" href="/about.html">О себе</a>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h2>Технологии</h2>
+          <ul class="tags">
+            <li>Docker</li><li>Kubernetes</li><li>Helm</li><li>Terraform</li><li>Ansible</li>
+            <li>AWS</li><li>GitHub Actions</li><li>GitLab CI</li><li>Prometheus</li><li>Grafana</li>
+          </ul>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>CI/CD</h3>
+            <p>Собираю и ускоряю пайплайны, уменьшаю время релиза, повышаю стабильность.</p>
+          </div>
+          <div class="card">
+            <h3>Kubernetes</h3>
+            <p>Проектирую кластеры, катю приложения, настраиваю ingress, observability и авто-масштабирование.</p>
+          </div>
+          <div class="card">
+            <h3>IaC</h3>
+            <p>Описываю инфраструктуру кодом, чтобы она была воспроизводимой и проверяемой.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Недавние проекты</h3>
+        <ul class="list">
+          <li>Migr. GitLab CI → Actions, ускорение билдов на 35%</li>
+          <li>Multi-cloud Terraform модули для AWS/GCP</li>
+          <li>Мониторинг и алертинг 24/7 (SLO/SLI)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Как работаю</h3>
+        <p>Сначала диагностика и цели. Потом — быстрые wins. Параллельно выстраиваю стабильные процессы и документацию.</p>
+      </div>
+      <div class="card">
+        <h3>Доступен</h3>
+        <p>Консалт, part-time, проектная работа. <a href="/contacts.html">Написать →</a></p>
+      </div>
+    </section>
+  </main>
+  
+<footer class="footer">
+  <div class="container">© <span id="y"></span> Иван Лакериев · DevOps · Docker · Kubernetes · AWS · Terraform</div>
+</footer>
+<script src="/assets/script.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+
+</body>
+</html>
