@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Иван — личная страница</title>
+  <meta name="description" content="Короткая визитка со ссылками: Telegram, GitHub, email и другие контакты." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230ea5e9'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-family='Arial' font-size='54' fill='white'%3EИ%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{
+      --bg: #0b1220;
+      --card: #0f172a; /* slate-900 */
+      --muted: #94a3b8; /* slate-400 */
+      --text: #e2e8f0;  /* slate-200 */
+      --accent: #0ea5e9; /* sky-500 */
+      --ring: rgba(14,165,233,.5);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Apple Color Emoji','Segoe UI Emoji';
+      color:var(--text); background:radial-gradient(1200px 1200px at 80% -10%, rgba(14,165,233,.25), transparent 60%),
+                        radial-gradient(900px 900px at -10% 110%, rgba(99,102,241,.18), transparent 60%), var(--bg);
+      display:grid; place-items:center; padding:24px;
+    }
+    .card{
+      width:100%; max-width:720px; background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00)), var(--card);
+      border:1px solid rgba(148,163,184,.12);
+      border-radius:24px; padding:28px; box-shadow: 0 20px 60px rgba(2,6,23,.35);
+      position:relative; overflow:hidden;
+    }
+    .glow{position:absolute; inset:auto -20% -40% auto; width:60%; height:60%; filter:blur(60px); opacity:.25; background: radial-gradient(closest-side, var(--accent), transparent 70%);}    
+    header{display:flex; align-items:center; gap:16px; margin-bottom:18px}
+    .avatar{width:72px; height:72px; border-radius:50%; display:grid; place-items:center; font-weight:700; font-size:28px; color:white;
+      background: linear-gradient(135deg, #22d3ee, #0ea5e9 60%, #6366f1); box-shadow: 0 0 0 6px rgba(14,165,233,.15)}
+    .title{line-height:1.15}
+    h1{margin:0; font-size:28px}
+    .subtitle{margin:4px 0 0; color:var(--muted)}
+
+    .bio{margin:14px 0 18px; color:#cbd5e1; line-height:1.6}
+
+    .links{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px}
+    .btn{display:flex; align-items:center; gap:10px; padding:14px 16px; border-radius:14px; text-decoration:none; color:white; border:1px solid rgba(148,163,184,.15);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      transition:.2s ease-in-out; position:relative}
+    .btn:hover{transform:translateY(-2px); box-shadow: 0 10px 24px rgba(2,6,23,.35)}
+    .btn:focus-visible{outline: 3px solid var(--ring)}
+    .btn small{display:block; color:#cbd5e1; opacity:.9}
+    .icon{width:22px; height:22px; flex:0 0 22px}
+
+    footer{margin-top:22px; display:flex; justify-content:space-between; align-items:center; gap:12px; color:var(--muted); font-size:14px}
+    .tag{padding:6px 10px; border:1px solid rgba(148,163,184,.2); border-radius:999px}
+
+    .qrwrap{display:flex; align-items:center; gap:12px}
+    .qr{width:64px; height:64px; border-radius:8px; background:white; padding:6px}
+
+    @media (max-width:520px){
+      .avatar{width:60px;height:60px;font-size:24px}
+      h1{font-size:24px}
+      .qrwrap{display:none}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="glow"></div>
+    <header>
+      <div class="avatar" aria-hidden="true">И</div>
+      <div class="title">
+        <h1>Иван Лакериев</h1>
+        <p class="subtitle">DevOps Engineer · Docker · Kubernetes · AWS · Terraform</p>
+      </div>
+    </header>
+
+    <p class="bio">Делаю надёжные CI/CD, инфраструктуру как код и мониторинг. Открыт к интересным проектам и консультациям. Ниже — быстрые ссылки и контакты.</p>
+
+    <section class="links" aria-label="Ссылки и контакты">
+      <a class="btn" href="https://t.me/username" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.036 15.47 8.9 19.86c.414 0 .593-.177.807-.39l1.941-1.878 4.022 2.953c.737.407 1.263.193 1.465-.682l2.655-12.441.001-.001c.235-1.097-.397-1.526-1.115-1.26L3.5 9.84c-1.073.418-1.057 1.021-.182 1.293l4.574 1.426 10.622-6.699c.5-.303.955-.135.58.168"/></svg>
+        <div>
+          <strong>Telegram</strong>
+          <small>@username</small>
+        </div>
+      </a>
+
+      <a class="btn" href="mailto:mail@example.com">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.4-.2 7.49 5.17a1 1 0 0 0 1.15 0L20.53 6.3a1 1 0 0 0-.53-.15H4.06a1 1 0 0 0-.54.15Z"/></svg>
+        <div>
+          <strong>Email</strong>
+          <small>mail@example.com</small>
+        </div>
+      </a>
+
+      <a class="btn" href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.1c0 5.13 3.33 9.48 7.96 11.02.58.11.8-.25.8-.56v-2.1c-3.24.72-3.92-1.4-3.92-1.4-.53-1.36-1.3-1.72-1.3-1.72-1.06-.74.08-.73.08-.73 1.17.08 1.78 1.21 1.78 1.21 1.04 1.78 2.73 1.26 3.39.96.11-.76.41-1.26.75-1.55-2.59-.29-5.32-1.32-5.32-5.87 0-1.3.46-2.36 1.21-3.19-.12-.29-.52-1.46.12-3.04 0 0 .98-.31 3.2 1.22.93-.26 1.92-.39 2.91-.39s1.98.13 2.91.39c2.2-1.53 3.18-1.22 3.18-1.22.64 1.58.24 2.75.12 3.04.76.83 1.2 1.89 1.2 3.19 0 4.56-2.74 5.57-5.35 5.86.42.37.81 1.11.81 2.24v3.32c0 .31.21.68.81.56A11.53 11.53 0 0 0 23.5 12.1C23.5 5.7 18 .5 12 .5Z"/></svg>
+        <div>
+          <strong>GitHub</strong>
+          <small>/username</small>
+        </div>
+      </a>
+
+      <a class="btn" href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 9h4v12H3V9Zm7 0h3.84v1.64h.06c.54-.98 1.86-2.02 3.83-2.02 4.1 0 4.86 2.7 4.86 6.22V21h-4v-5.17c0-1.23-.02-2.82-1.72-2.82s-1.98 1.34-1.98 2.73V21h-4V9Z"/></svg>
+        <div>
+          <strong>LinkedIn</strong>
+          <small>/in/username</small>
+        </div>
+      </a>
+
+      <a class="btn" href="https://wa.me/380000000000" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.01 1.7a10.3 10.3 0 0 0-8.7 15.7L2 23l5.78-1.3a10.3 10.3 0 1 0 4.23-20Zm6 15.02c-.26.74-1.26 1.36-1.8 1.44-.48.07-1.1.1-1.77-.11-.4-.12-.9-.3-1.56-.58-2.74-1.19-4.52-3.97-4.66-4.15-.14-.18-1.11-1.48-1.11-2.83 0-1.35.71-2 .96-2.27.26-.27.57-.34.76-.34h.55c.18 0 .42-.07.66.5.26.63.9 2.18.98 2.33.08.15.13.33.02.53-.11.2-.16.33-.33.52-.16.19-.35.42-.5.56-.16.15-.33.31-.14.61.19.3.86 1.42 1.86 2.3 1.28 1.1 2.36 1.45 2.69 1.61.33.15.52.13.72-.08.21-.23.83-.97 1.06-1.3.22-.33.45-.28.76-.17.31.11 1.97.93 2.3 1.1.34.19.56.28.64.44.07.18.07.98-.19 1.72Z"/></svg>
+        <div>
+          <strong>WhatsApp</strong>
+          <small>+38 (000) 000‑00‑00</small>
+        </div>
+      </a>
+    </section>
+
+    <footer>
+      <span class="tag">Доступен для сотрудничества</span>
+      <div class="qrwrap" title="QR на эту страницу">
+        <!-- Встроенный простой QR (SVG) для текущего домена — замените URL ниже на ваш -->
+        <img class="qr" alt="QR" src="https://api.qrserver.com/v1/create-qr-code/?size=128x128&data=https%3A%2F%2Fexample.com" />
+      </div>
+    </footer>
+  </main>
+
+  <!-- Мелкая телеметрия отключена: никаких внешних скриптов; только стили и SVG -->
+</body>
+</html>
