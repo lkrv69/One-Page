@@ -6,45 +6,75 @@ description: "How to reach me"
 
 # 📇 Contacts
 
-## 📬 Direct Links
-- 📧 **Email:** [your.email@example.com](mailto:your.email@example.com)  
-- 💼 **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-- 🐙 **GitHub:** [github.com/yourusername](https://github.com/yourusername)  
+Ниже — быстрые способы связаться, а ещё немного полезных и забавных виджетов, чтобы страница была живой.
+
+## 🔗 Быстрые ссылки
+- 📧 **Email:** [ivan@lkrv69.com](mailto:ivan@lkrv.com)
+- ✈ **Telegram:** [@lkrv69](https://t.me/lkrv69)
+- 💼 **LinkedIn:** [linkedin.com/in/lakieriev](https://linkedin.com/in/lakieriev)
+- 🐙 **GitHub:** [github.com/incognito](https://github.com/incognito)
 
 ---
 
-## 📍 Location
-🗺️ **Current city:** 🌆 _Your City, Your Country_  
-🌍 **Map:** [View on Google Maps](https://goo.gl/maps/example)  
-> _Yes, I might be closer to you than you think!_  
+## 🕒 Мой локальный часовой пояс
+<div id="local-time" data-timezone="Europe/Kyiv" style="font-size:1.05rem;"></div>
+<small>Если ночь — не обижайтесь, отвечу утром 🙂</small>
 
 ---
 
-## 💬 Messenger & Quick Chat
-- ✈ **Telegram:** [@yourhandle](https://t.me/yourhandle)  
-- 📱 **WhatsApp:** [+00 123 456 789](https://wa.me/00123456789)  
-- 🎯 **Signal:** available upon request  
+## 🗓 Сколько дней я в IT
+<div id="days-in-it" data-start="2016-09-01"></div>
+<small>Дата старта меняется в атрибуте <code>data-start</code>.</small>
 
 ---
 
-## 🕹 Fun Extras
-- 🎲 **Random Fact About Me:**  
-  > I can type faster than I can speak (seriously).  
-
-- 🕑 **Current Local Time:**  
-  ![Static badge](https://img.shields.io/badge/time-12:45_PM-blue) _(updates daily)_  
-
-- 🎵 **Now Playing on Spotify:**  
-  [![Spotify](https://novatorem.vercel.app/api/spotify)](https://open.spotify.com/user/yourusername)  
+## 🌦 Погода у меня
+<!-- Замените CITY на свой город латиницей, например Kharkiv -->
+<img alt="local weather" src="https://wttr.in/CITY?format=%C+%t&lang=ru&Q"
+     style="display:inline-block;padding:.4rem .6rem;border:1px solid #ddd;border-radius:.6rem;font-family:ui-monospace,Menlo,monospace" />
+<small>Обновляется автоматически при загрузке страницы.</small>
 
 ---
 
-## 🖼 Just for Fun
-![Animated Gif](https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif)  
-> Drop me a line and I might just respond with a GIF like this.
+## 🗺 Где я примерно
+<!-- Координаты можно накинуть в ссылку, а картинку взять со статической карты OSM -->
+<p>
+  <a href="https://www.openstreetmap.org/?mlat=50.004&mlon=36.231#map=11/50.004/36.231" target="_blank" rel="noopener">
+    <img alt="map" src="https://staticmap.openstreetmap.de/staticmap.php?center=50.004,36.231&zoom=10&size=640x240&maptype=mapnik&markers=50.004,36.231,lightblue1"
+         style="width:100%;max-width:680px;border-radius:12px;border:1px solid #e5e7eb" />
+  </a>
+</p>
+<small>Клик по карте — откроет OpenStreetMap. Координаты можно скорректировать.</small>
 
 ---
 
-## 📅 Quick Meet
-Want to talk? Book a quick call here:  
-[![Book a Meeting](https://img.shields.io/badge/Book%20a%20Call-Calendly-green)](https://calendly.com/yourusername/30min)
+## 💡 Цитата дня
+<blockquote id="quote-box" style="margin:0;border-left:4px solid #e5e7eb;padding:.6rem 1rem;color:#444">
+  Загружаю вдохновение...
+</blockquote>
+<small id="quote-author" style="color:#666"></small>
+
+---
+
+## 📨 Невероятно удобный способ написать
+- 🔐 **Анонимно и без логина:** <a href="https://forms.gle/your-google-form" target="_blank" rel="noopener">короткая форма</a>
+- 📅 **Назначить звонок:** <a href="https://calendly.com/yourusername/30min" target="_blank" rel="noopener">выбрать слот на 30 мин</a>
+
+---
+
+## 🧩 Если я не отвечаю
+<details>
+  <summary>Возможные причины</summary>
+  <ul>
+    <li>💤 Сплю — у меня ночь</li>
+    <li>🛠 На созвоне — отвечу после</li>
+    <li>🍕 Обед — 15–20 мин и вернусь</li>
+  </ul>
+</details>
+
+---
+
+## 🔑 PGP (для тех, кто любит приватность)
+<details>
+  <summary>Показать публичный ключ</summary>
+
