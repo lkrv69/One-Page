@@ -1,4 +1,0 @@
-html.transition-in main{opacity:0; transform:translateY(6px)}
-html.transition-ready main{opacity:1; transform:none; transition:opacity .32s ease, transform .32s ease}
-html.transition-out main{opacity:0; transform:translateY(6px)}
-@media (prefers-reduced-motion: reduce){ html.transition-ready main{transition:none} }
