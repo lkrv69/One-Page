@@ -1,10 +1,11 @@
 ---
 title: "Contacts"
 layout: default
+description: "How to reach me"
 ---
 
 # Contacts
 
-📧 **Email:** your.email@example.com  
-💼 **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-🐙 **GitHub:** [github.com/yourusername](https://github.com/yourusername)
+- 📧 **Email:** your.email@example.com  
+- 💼 **LinkedIn:** https://linkedin.com/in/yourprofile  
+- 🐙 **GitHub:** https://github.com/yourusername

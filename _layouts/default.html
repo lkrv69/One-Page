@@ -10,11 +10,13 @@
 <body>
   <header class="site-header">
     <div class="container nav-container">
-      <div class="brand">{{ site.title }}</div>
-      <nav>
-        <a href="{{ "/" | relative_url }}">Home</a>
-        <a href="{{ "/about/" | relative_url }}">About</a>
+      <div class="brand"><a href="{{ "/" | relative_url }}">{{ site.title }}</a></div>
+      <nav class="main-nav">
+        <a href="{{ "/" | relative_url }}">Main</a>
+        <a href="{{ "/about/" | relative_url }}">About me</a>
         <a href="{{ "/contacts/" | relative_url }}">Contacts</a>
+        <a href="{{ "/news/" | relative_url }}">News</a>
+        <a href="{{ "/vpn/" | relative_url }}">VPN</a>
       </nav>
     </div>
   </header>

@@ -5,12 +5,15 @@ description: "DevOps Engineer: CI/CD, Kubernetes, Terraform, AWS/GCP."
 ---
 
 <div class="hero">
-  <h1>Hi! I'm a DevOps Engineer</h1>
-  <p>I build reliable CI/CD pipelines and infrastructure as code, with a focus on automation, scalability, and resilience.</p>
-  <div class="btn-group">
-    <a href="/contacts/" class="btn">Get in Touch</a>
-    <a href="/about/" class="btn secondary">About Me</a>
+  <div>
+    <h1>Hi! I’m a DevOps Engineer</h1>
+    <p class="sub">I build reliable CI/CD and scalable cloud infrastructure as code — fast delivery, zero-downtime, and observability by default.</p>
+    <div class="btns">
+      <a class="btn" href="/contacts/">Get in touch</a>
+      <a class="btn secondary" href="/about/">About me</a>
+    </div>
   </div>
+  <img class="hero-ill" src="/assets/img/hero-devops.svg" alt="DevOps illustration">
 </div>
 
 ## Experienced With
