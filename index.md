@@ -1,26 +1,33 @@
 ---
-title: "Главная"
-description: "DevOps инженер: CI/CD, Kubernetes, Terraform, AWS/GCP."
+title: "Home"
+layout: default
+description: "DevOps Engineer: CI/CD, Kubernetes, Terraform, AWS/GCP."
 ---
 
-# Привет! Я — DevOps инженер
+<div class="page-wrapper">
+  <div class="content-block markdown-body">
 
-Делаю надёжные CI/CD и инфраструктуру как код.
+# Hi! I'm a DevOps Engineer
 
-Опыт с **Docker**, **Kubernetes**, **Terraform**, **AWS/GCP/Azure**, мониторинг (**Prometheus**, **Grafana**), CI/CD с **GitLab CI** и **GitHub Actions**.
+I build reliable CI/CD pipelines and infrastructure as code.
 
-## Чем я занимаюсь
+Experienced with **Docker**, **Kubernetes**, **Terraform**, **AWS/GCP/Azure**, monitoring (**Prometheus**, **Grafana**), and CI/CD using **GitLab CI** and **GitHub Actions**.
 
-- **CI/CD** — собираю и ускоряю пайплайны, уменьшаю время релиза, повышаю стабильность.
-- **Kubernetes** — проектирую кластеры, разворачиваю приложения, настраиваю ingress, observability и авто-масштабирование.
-- **IaC** — описываю инфраструктуру кодом, чтобы она была воспроизводимой и проверяемой.
+## What I Do
 
-## Недавние проекты
+- **CI/CD** — build and optimize pipelines, reduce release times, and improve stability.
+- **Kubernetes** — design clusters, deploy applications, configure ingress, observability, and auto-scaling.
+- **IaC** — describe infrastructure as code to make it reproducible and testable.
 
-- Миграция GitLab CI → GitHub Actions, ускорение билдов на 35%
-- Multi-cloud Terraform-модули для AWS/GCP
-- Мониторинг и алертинг 24/7 (SLO/SLI)
+## Recent Projects
 
-## Контакты
+- Migrated from GitLab CI to GitHub Actions, improving build speed by 35%.
+- Developed multi-cloud Terraform modules for AWS and GCP.
+- Implemented 24/7 monitoring and alerting (SLO/SLI).
 
-[Связаться →](/contacts/) | [О себе →](/about/)
+## Contacts
+
+[Get in touch →](/contacts/) | [About me →](/about/)
+
+  </div>
+</div>
