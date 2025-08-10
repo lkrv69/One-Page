@@ -1,58 +1,23 @@
 ---
-title: "Главная"
-description: "DevOps инженер: CI/CD, Kubernetes, Terraform, AWS/GCP."
+title: "Home"
+layout: default
+description: "DevOps Engineer: CI/CD, Kubernetes, Terraform, AWS/GCP."
 ---
 
-<section class="hero">
-  <div>
-    <p class="kicker">Привет! Я — DevOps инженер</p>
-    <h1>Делаю надёжные CI/CD и инфраструктуру как код</h1>
-    <p>Опыт с Docker, Kubernetes, Terraform, AWS/GCP/Azure, мониторинг (Prometheus, Grafana), GitLab CI/GitHub Actions.</p>
-    <div class="cta">
-      <a class="btn" href="/contacts/">Связаться</a>
-      <a class="btn secondary" href="/about/">О себе</a>
-    </div>
-  </div>
-  <div>
-    <div class="card">
-      <h2>Технологии</h2>
-      <ul class="tags">
-        <li>Docker</li><li>Kubernetes</li><li>Helm</li><li>Terraform</li><li>Ansible</li>
-        <li>AWS</li><li>GitHub Actions</li><li>GitLab CI</li><li>Prometheus</li><li>Grafana</li>
-      </ul>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <h3>CI/CD</h3>
-        <p>Собираю и ускоряю пайплайны, уменьшаю время релиза, повышаю стабильность.</p>
-      </div>
-      <div class="card">
-        <h3>Kubernetes</h3>
-        <p>Проектирую кластеры, разворачиваю приложения, настраиваю ingress, observability и авто-масштабирование.</p>
-      </div>
-      <div class="card">
-        <h3>IaC</h3>
-        <p>Описываю инфраструктуру кодом, чтобы она была воспроизводимой и проверяемой.</p>
-      </div>
-    </div>
-  </div>
-</section>
+# Hi, I'm Ivan Lakieriev 👋
 
-<section class="cards">
-  <div class="card">
-    <h3>Недавние проекты</h3>
-    <ul class="list">
-      <li>Миграция GitLab CI → Actions, ускорение билдов на 35%</li>
-      <li>Multi-cloud Terraform модули для AWS/GCP</li>
-      <li>Мониторинг и алертинг 24/7 (SLO/SLI)</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3>Новости</h3>
-    <p>Свежие заметки и апдейты — в <a href="/news/">разделе новостей</a>.</p>
-  </div>
-  <div class="card">
-    <h3>Доступен</h3>
-    <p>Консалт, part-time, проектная работа. <a href="/contacts/">Написать →</a></p>
-  </div>
-</section>
+I build reliable CI/CD pipelines and infrastructure as code.
+
+Experienced with **Docker**, **Kubernetes**, **Terraform**, **AWS/GCP/Azure**, monitoring (**Prometheus**, **Grafana**), and CI/CD using **GitLab CI** and **GitHub Actions**.
+
+## What I Do
+- **CI/CD** — build and optimize pipelines, reduce release times, and improve stability.
+- **Kubernetes** — design clusters, deploy applications, configure ingress, observability, and auto-scaling.
+- **IaC** — describe infrastructure as code to make it reproducible and testable.
+
+## Recent Projects
+- Migrated from GitLab CI to GitHub Actions, improving build speed by 35%.
+- Developed multi-cloud Terraform modules for AWS and GCP.
+- Implemented 24/7 monitoring and alerting (SLO/SLI).
+
+[Get in touch →](/contacts/) · [About me →](/about/)
