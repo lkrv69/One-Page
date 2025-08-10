@@ -35,4 +35,14 @@
 <script src="/assets/script.js"></script>
 <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
+<body>
+  {% include header.html %}
+  <div class="page-wrapper">
+    <main class="content-block markdown-body">
+      {{ content }}
+    </main>
+  </div>
+  {% include footer.html %}
+</body>
 </html>
+
