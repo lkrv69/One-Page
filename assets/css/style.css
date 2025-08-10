@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --bg: #f5f5f7;
-  --text: #1d1d1f;
-  --accent: #0071e3;
+  --bg-start: #0a0a0a;
+  --bg-end: #1c1c1e;
+  --text: #f5f5f7;
+  --accent: #0a84ff;
   --container: 900px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #000000;
-    --text: #f5f5f7;
-    --accent: #0a84ff;
-  }
-}
-
-* { box-sizing: border-box; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg);
+  background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
   color: var(--text);
   display: flex;
   flex-direction: column;
@@ -34,7 +26,9 @@ body {
 
 .site-header {
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
 }
 
 .nav-container {
@@ -59,16 +53,66 @@ nav a:hover {
   color: var(--accent);
 }
 
+.hero {
+  padding: 80px 0 60px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 700px;
+  margin: 0 auto 28px;
+}
+
+.hero .btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #006edc;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn.secondary:hover {
+  background: rgba(10,132,255,0.1);
+}
+
 .site-content {
   flex: 1;
   padding: 40px 0;
   line-height: 1.6;
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeInUp 1.2s ease-out;
 }
 
 .site-footer {
   padding: 20px 0;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
   text-align: center;
   font-size: 0.9rem;
   opacity: 0.8;
@@ -88,6 +132,11 @@ nav a:hover {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
