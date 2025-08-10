@@ -161,3 +161,64 @@ I’m a DevOps Engineer with 4+ years building cloud infrastructure, CI/CD pipel
   </div>
 
 </section>
+
+
+<style>
+  /* === reveal on scroll === */
+  .about-scope .reveal{
+    opacity:0; transform:translateY(12px);
+    transition:opacity .5s ease, transform .5s ease;
+    will-change: opacity, transform;
+  }
+  .about-scope .reveal.is-visible{
+    opacity:1; transform:translateY(0);
+  }
+  /* Небольшой «стаггер» через CSS-переменную */
+  .about-scope .reveal{ transition-delay: var(--d, 0ms); }
+
+  /* Если пользователь просит уменьшить анимации — отключаем */
+  @media (prefers-reduced-motion: reduce){
+    .about-scope .reveal{ opacity:1 !important; transform:none !important; transition:none !important; }
+  }
+</style>
+
+<script>
+  (function(){
+    // если движок вырезает <script>, помести этот блок в layout.
+    const root = document.querySelector('.about-scope');
+    if(!root) return;
+
+    // элементы для анимации
+    const targets = [
+      ...root.querySelectorAll('.t-item'),
+      ...root.querySelectorAll('.metric'),
+      ...root.querySelectorAll('.badge')
+    ];
+
+    // навешиваем класс reveal и задаём «стаггер» в рамках каждого контейнера
+    const setStagger = (nodes, step=80) => nodes.forEach((el, i) => {
+      el.classList.add('reveal');
+      el.style.setProperty('--d', (i*step) + 'ms');
+    });
+
+    // группируем по секциям для красивого появления
+    const groups = [
+      root.querySelectorAll('.metric'),
+      root.querySelectorAll('.timeline .t-item'),
+      root.querySelectorAll('.skills .badge')
+    ];
+    groups.forEach(g => setStagger([...g]));
+
+    // IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target); // показываем один раз
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
+
+    targets.forEach(t => io.observe(t));
+  })();
+</script>
