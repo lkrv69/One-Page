@@ -4,7 +4,7 @@ layout: default
 description: "DevOps Engineer: CI/CD, Kubernetes, Terraform, AWS/GCP."
 ---
 
-# Hi, I'm Ivan Lakieriev 👋
+# Hi! I'm a DevOps Engineer
 
 I build reliable CI/CD pipelines and infrastructure as code.
 
@@ -20,4 +20,5 @@ Experienced with **Docker**, **Kubernetes**, **Terraform**, **AWS/GCP/Azure**, m
 - Developed multi-cloud Terraform modules for AWS and GCP.
 - Implemented 24/7 monitoring and alerting (SLO/SLI).
 
+## Contacts
 [Get in touch →](/contacts/) · [About me →](/about/)

@@ -1,4 +1,17 @@
 title: "Ivan Lakieriev — DevOps"
-description: "DevOps Engineer: CI/CD, Kubernetes, Terraform, AWS/GCP."
-theme: null
+description: "CI/CD, Terraform, AWS, System Engeneer."
+url: "https://lkrv69.com"
+permalink: pretty
 markdown: kramdown
+theme: null
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+collections:
+  posts:
+    output: true
+defaults:
+  - scope: {path: "", type: "posts"}
+    values: {layout: post, permalink: /news/:title/}
+  - scope: {path: ""}
+    values: {layout: default}
