@@ -5,9 +5,6 @@ description: "How to reach me"
 ---
 
 # 📇 Contacts
-
-Ниже — быстрые способы связаться, а ещё немного полезных и забавных виджетов, чтобы страница была живой.
-
 ## 🔗 Быстрые ссылки
 - 📧 **Email:** [ivan@lkrv69.com](mailto:ivan@lkrv.com)
 - ✈ **Telegram:** [@lkrv69](https://t.me/lkrv69)
@@ -17,20 +14,20 @@ description: "How to reach me"
 ---
 
 ## 🕒 Мой локальный часовой пояс
-<div id="local-time" data-timezone="Europe/Kyiv" style="font-size:1.05rem;"></div>
+<div id="local-time" data-timezone="Europe/Kyiv" style="font-size:1.05rem;">Kyiv</div>
 <small>Если ночь — не обижайтесь, отвечу утром 🙂</small>
 
 ---
 
 ## 🗓 Сколько дней я в IT
-<div id="days-in-it" data-start="2016-09-01"></div>
-<small>Дата старта меняется в атрибуте <code>data-start</code>.</small>
+<div id="days-in-it" data-start="2021-09-01"></div>
+<small>Start <code>data-start</code>.</small>
 
 ---
 
 ## 🌦 Погода у меня
 <!-- Замените CITY на свой город латиницей, например Kharkiv -->
-<img alt="local weather" src="https://wttr.in/CITY?format=%C+%t&lang=ru&Q"
+<img alt="local weather" src="https://wttr.in/kyiv?format=%C+%t&lang=ru&Q"
      style="display:inline-block;padding:.4rem .6rem;border:1px solid #ddd;border-radius:.6rem;font-family:ui-monospace,Menlo,monospace" />
 <small>Обновляется автоматически при загрузке страницы.</small>
 
@@ -44,8 +41,6 @@ description: "How to reach me"
          style="width:100%;max-width:680px;border-radius:12px;border:1px solid #e5e7eb" />
   </a>
 </p>
-<small>Клик по карте — откроет OpenStreetMap. Координаты можно скорректировать.</small>
-
 ---
 
 ## 💡 Цитата дня
