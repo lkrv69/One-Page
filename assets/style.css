@@ -93,3 +93,27 @@ ul.tags{display:flex; flex-wrap:wrap; gap:calc(var(--space)*1); padding:0; list-
   .menu.open{display:grid; grid-template-columns:1fr; gap:8px}
   .nav-toggle{display:block}
 }
+
+.page-wrapper {
+  min-height: 100vh; /* растягиваем на весь экран */
+  display: flex;
+  flex-direction: column;
+}
+
+.content-block {
+  flex: 1; /* занимает всё пространство между шапкой и футером */
+  max-width: 900px;
+  margin: 40px auto; /* отступ сверху/снизу и центрирование */
+  padding: 24px;
+  background: rgba(255,255,255,0.03); /* лёгкий фон */
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+footer {
+  margin-top: auto; /* прижимает футер вниз */
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 14px;
+}
