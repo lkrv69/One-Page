@@ -5,7 +5,7 @@
   function apply(mode){
     let target = mode || localStorage.getItem('theme') || 'auto';
     if(target==='auto'){ target = prefersDark.matches ? 'dark' : 'light'; }
-    root.setAttribute('data-theme', target === 'dark' ? '' : 'light'); // empty means dark variables
+    root.setAttribute('data-theme', target === 'dark' ? '' : 'light');
     localStorage.setItem('theme', target);
     if(btn()) btn().textContent = (target==='dark' ? '☾' : '☀');
   }
