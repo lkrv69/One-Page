@@ -1,9 +1,8 @@
-/* Dual premium gradients for Light & Dark + smooth theme switch */
-/* Default variables assume DARK; LIGHT overrides below */
+/* Dual gradients + theme + reveal + responsive (backup) */
 :root{
-  --bg1:#05070c; --bg2:#0f1219;         /* dark gradient stops */
-  --glow1:rgba(12, 74, 110, .32);       /* cyan glow */
-  --glow2:rgba(16, 185, 129, .18);      /* teal glow */
+  --bg1:#05070c; --bg2:#0f1219;
+  --glow1:rgba(12, 74, 110, .32);
+  --glow2:rgba(16, 185, 129, .18);
   --text:#f5f5f7; --muted:#b0b3b8;
   --accent:#0a84ff; --accent-press:#0071e3;
   --border:rgba(255,255,255,.08);
@@ -12,24 +11,19 @@
   --container:1024px;
 }
 html[data-theme="light"]{
-  --bg1:#fafbff; --bg2:#eef2f7;         /* light gradient stops */
-  --glow1:rgba(56, 189, 248, .10);      /* soft sky */
-  --glow2:rgba(59, 130, 246, .06);      /* blue mist */
+  --bg1:#fafbff; --bg2:#eef2f7;
+  --glow1:rgba(56, 189, 248, .10);
+  --glow2:rgba(59, 130, 246, .06);
   --text:#1d1d1f; --muted:#6e6e73;
   --accent:#0071e3; --accent-press:#005fb8;
   --border:rgba(0,0,0,.08);
   --header-bg:rgba(255,255,255,.72);
   --header-border:var(--border);
 }
-
-/* Base */
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
-  margin:0;
-  font-family:-apple-system, BlinkMacSystemFont, "SF Pro Text","SF Pro Display", Inter, Roboto, "Segoe UI", Arial, sans-serif;
-  color:var(--text);
-  /* Premium layered gradient (fixed), no banding */
+  margin:0; font-family:-apple-system,Inter,Roboto,"Segoe UI",Arial,sans-serif; color:var(--text);
   background:
     radial-gradient(1100px 520px at 18% -8%, var(--glow1) 0%, rgba(0,0,0,0) 38%),
     radial-gradient(900px 480px at 90% 110%, var(--glow2) 0%, rgba(0,0,0,0) 52%),
@@ -37,13 +31,9 @@ body{
   background-attachment: fixed;
   display:flex; flex-direction:column; min-height:100vh;
   -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-  transition: background 420ms ease; /* gentle switch between themes */
+  transition: background 420ms ease;
 }
-
-/* Header */
-.site-header{position:sticky; top:0; z-index:10; opacity:0; transform:translateY(-6px);
-  transition:opacity .4s ease, transform .4s ease, background-color .3s ease;
-  background:var(--header-bg); backdrop-filter:blur(12px); border-bottom:1px solid var(--header-border)}
+.site-header{position:sticky; top:0; z-index:10; opacity:0; transform:translateY(-6px); transition:opacity .4s ease, transform .4s ease, background-color .3s ease; background:var(--header-bg); backdrop-filter:blur(12px); border-bottom:1px solid var(--header-border)}
 .site-header.show{opacity:1; transform:none}
 .container{max-width:var(--container); margin:0 auto; padding:0 24px}
 .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text); font-weight:700; letter-spacing:.2px; white-space:nowrap}
@@ -59,8 +49,6 @@ html[data-theme="light"] .icon-btn:hover{background:rgba(0,0,0,.04)}
 .theme-btn{margin-left:4px; padding:8px 10px; border-radius:10px; border:1px solid var(--border); background:transparent; color:var(--text); cursor:pointer}
 html[data-theme="dark"] .theme-btn:hover{background:rgba(255,255,255,.06)}
 html[data-theme="light"] .theme-btn:hover{background:rgba(0,0,0,.04)}
-
-/* Content */
 .site-content{flex:1; padding:56px 0 64px; line-height:1.7}
 .markdown-body h1{font-size:48px; line-height:1.1; letter-spacing:-0.02em; margin:.6em 0 .4em; font-weight:800}
 .markdown-body h2{font-size:28px; margin:1.4em 0 .6em; font-weight:800}
@@ -68,8 +56,6 @@ html[data-theme="light"] .theme-btn:hover{background:rgba(0,0,0,.04)}
 .markdown-body strong{font-weight:700}
 .markdown-body a{color:var(--accent); text-decoration:none}
 .markdown-body a:hover{text-decoration:underline}
-
-/* Hero */
 .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center; margin:18px 0 6px}
 .hero h1{margin:0 0 12px}
 .hero p.sub{font-size:20px; color:var(--muted); margin:0 0 22px}
@@ -80,31 +66,12 @@ html[data-theme="light"] .theme-btn:hover{background:rgba(0,0,0,.04)}
 .btn.secondary:hover{background:rgba(10,132,255,.12)}
 .hero-ill{width:100%; border-radius:16px; border:1px solid var(--border); box-shadow:0 20px 60px rgba(0,0,0,.20); background:linear-gradient(180deg,#0d1b2a,#162642); display:block; transform:translateY(0); will-change:transform}
 html[data-theme="dark"] .hero-ill{box-shadow:0 24px 70px rgba(0,0,0,.35)}
-
-/* Reveal */
 .reveal{opacity:0; transform:translateY(18px); will-change:opacity, transform; transition:opacity .6s ease, transform .6s ease}
 .reveal.in{opacity:1; transform:none}
-
-/* Footer */
 .site-footer{margin-top:auto; border-top:1px solid var(--header-border); padding:18px 0; text-align:center; opacity:.85; font-size:14px}
-
-/* 404 card */
 .notfound{display:flex; align-items:center; justify-content:center; min-height:70vh; text-align:center}
 .notfound .box{max-width:720px; padding:28px; border-radius:24px; background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)); border:1px solid var(--header-border); box-shadow:0 22px 60px rgba(0,0,0,.25)}
 .notfound h1{font-size:72px; margin:0 0 8px; letter-spacing:-.03em}
 .notfound p{color:var(--muted); font-size:18px; margin:0 0 18px}
-
-/* Responsive */
-@media (max-width: 920px){
-  .container{padding:0 16px}
-  .markdown-body h1{font-size:38px}
-  .markdown-body h2{font-size:24px}
-  .hero{grid-template-columns:1fr; gap:16px}
-  .brand-text{display:none;}
-}
-@media (max-width: 600px){
-  .site-content{padding:40px 0 56px}
-  .btn{padding:12px 20px}
-  .icon-btn{width:34px; height:34px}
-  .markdown-body p, .markdown-body li{font-size:17px}
-}
+@media (max-width: 920px){ .container{padding:0 16px} .markdown-body h1{font-size:38px} .markdown-body h2{font-size:24px} .hero{grid-template-columns:1fr; gap:16px} .brand-text{display:none;} }
+@media (max-width: 600px){ .site-content{padding:40px 0 56px} .btn{padding:12px 20px} .icon-btn{width:34px; height:34px} .markdown-body p, .markdown-body li{font-size:17px} }

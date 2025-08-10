@@ -1,0 +1,1 @@
+(function(){ window.addEventListener('DOMContentLoaded', () => { const h = document.querySelector('.site-header'); if(h) h.classList.add('show'); }); })();
