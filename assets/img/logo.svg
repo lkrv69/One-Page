@@ -1,7 +1,148 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#0a84ff"/><stop offset="100%" stop-color="#22d3ee"/>
-  </linearGradient></defs>
-  <rect x="8" y="8" width="80" height="80" rx="20" fill="url(#g)"/>
-  <text x="48" y="58" text-anchor="middle" font-family="SF Pro, Inter, Arial" font-size="36" fill="#fff" font-weight="700">IL</text>
-</svg>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>I.Lakieriev DevOps – Apple‑style logo</title>
+<style>
+  :root{
+    /* Primary gradient stops (Apple‑ish blue → cyan). */
+    --c1:#0a84ff; /* iOS Blue */
+    --c2:#22d3ee; /* Cyan */
+    --bg:#0a0a0a;
+    --txt:#ffffff;
+    --accent:#d1f4ff;
+  }
+  html,body{margin:0;background:linear-gradient(180deg,#0b0f14 0%,#0d1117 100%);color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter",system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1080px;margin:40px auto;padding:24px}
+  h1{font-weight:700;letter-spacing:.3px;margin:0 0 16px;font-size:28px}
+  p{opacity:.8;margin:0 0 24px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.03);padding:20px}
+  .card h2{font-size:16px;margin:0 0 12px;font-weight:600;letter-spacing:.25px}
+  .note{font-size:12px;opacity:.65;margin-top:10px}
+  svg{width:100%;height:auto;display:block}
+  /* Reusable defs via <symbol>. */
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>I.Lakieriev · DevOps — Apple‑style logo (SVG)</h1>
+  <p>Three polished variants. Export any SVG directly. Colors, radii, and typography are tweakable in‑place.</p>
+  <div class="grid">
+    <!-- Variant 1: App‑icon squircle (monogram) -->
+    <div class="card">
+      <h2>1) App‑icon squircle</h2>
+      <svg viewBox="0 0 1024 1024" role="img" aria-label="I.Lakieriev DevOps icon">
+        <defs>
+          <!-- Background gradient -->
+          <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="var(--c1)"/>
+            <stop offset="100%" stop-color="var(--c2)"/>
+          </linearGradient>
+          <!-- Subtle radial glow for depth -->
+          <radialGradient id="glow" cx="50%" cy="20%" r="70%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity=".35"/>
+            <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+          </radialGradient>
+          <!-- Inner shadow filter (Apple‑like depth) -->
+          <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset dx="0" dy="6"/>
+            <feGaussianBlur stdDeviation="16" result="blur"/>
+            <feComposite in="SourceAlpha" in2="blur" operator="arithmetic" k2="-1" k3="1"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 .65 0"/>
+            <feBlend in="SourceGraphic" mode="normal"/>
+          </filter>
+          <!-- Soft outer shadow -->
+          <filter id="drop" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="18" result="b"/>
+            <feOffset dy="18"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .35 0"/>
+            <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- Squircle path (approx iOS icon shape) -->
+        <path filter="url(#drop)" fill="url(#grad1)" d="M512 32c-140 0-178 2-226 20a224 224 0 0 0-134 134C134 234 132 272 132 412v200c0 140 2 178 20 226a224 224 0 0 0 134 134c48 18 86 20 226 20s178-2 226-20a224 224 0 0 0 134-134c18-48 20-86 20-226V412c0-140-2-178-20-226a224 224 0 0 0-134-134C690 34 652 32 512 32Z"/>
+
+        <!-- Subtle glass glow on top-left -->
+        <ellipse cx="320" cy="220" rx="300" ry="200" fill="url(#glow)"/>
+
+        <!-- Inner shadow overlay for rim -->
+        <path filter="url(#innerShadow)" fill="transparent" d="M512 32c-140 0-178 2-226 20a224 224 0 0 0-134 134C134 234 132 272 132 412v200c0 140 2 178 20 226a224 224 0 0 0 134 134c48 18 86 20 226 20s178-2 226-20a224 224 0 0 0 134-134c18-48 20-86 20-226V412c0-140-2-178-20-226a224 224 0 0 0-134-134C690 34 652 32 512 32Z"/>
+
+        <!-- Monogram: IL -->
+        <g fill="white" font-weight="700" font-family="SF Pro Display, -apple-system, system-ui, Inter, Arial, Helvetica, sans-serif" text-anchor="middle">
+          <text x="512" y="585" font-size="360" letter-spacing="8">IL</text>
+        </g>
+
+        <!-- Subline (optional, hidden for icon purity) -->
+        <!-- <text x="512" y="680" fill="rgba(255,255,255,.9)" font-size="64" text-anchor="middle" style="font-weight:600;letter-spacing:.5px">DevOps</text> -->
+      </svg>
+      <div class="note">Squircle with gradient, inner/outer shadow, and glass highlight. Ideal for app‑icon/avatar.</div>
+    </div>
+
+    <!-- Variant 2: Circular badge -->
+    <div class="card">
+      <h2>2) Circular badge</h2>
+      <svg viewBox="0 0 1024 1024" role="img" aria-label="I.Lakieriev DevOps circle badge">
+        <defs>
+          <radialGradient id="rad" cx="35%" cy="30%" r="85%">
+            <stop offset="0%" stop-color="#9ad9ff"/>
+            <stop offset="60%" stop-color="var(--c1)"/>
+            <stop offset="100%" stop-color="var(--c2)"/>
+          </radialGradient>
+          <filter id="softOuter" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="12" result="b"/>
+            <feOffset dy="10"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .28 0"/>
+            <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <circle cx="512" cy="512" r="420" fill="url(#rad)" filter="url(#softOuter)"/>
+        <g fill="#fff" font-family="SF Pro Display, -apple-system, system-ui, Inter, Arial, Helvetica, sans-serif" text-anchor="middle">
+          <text x="512" y="565" font-size="360" font-weight="700" letter-spacing="8">IL</text>
+        </g>
+      </svg>
+      <div class="note">Round badge version — great for stickers, favicons, or social avatars.</div>
+    </div>
+
+    <!-- Variant 3: Horizontal lockup with wordmark -->
+    <div class="card">
+      <h2>3) Horizontal lockup</h2>
+      <svg viewBox="0 0 1400 360" role="img" aria-label="I.Lakieriev DevOps horizontal logo">
+        <defs>
+          <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="var(--c1)"/>
+            <stop offset="100%" stop-color="var(--c2)"/>
+          </linearGradient>
+          <filter id="outer" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="b"/>
+            <feOffset dy="8"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .25 0"/>
+            <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- Icon (compact squircle) -->
+        <g transform="translate(20 20)">
+          <rect x="0" y="0" rx="88" ry="88" width="320" height="320" fill="url(#bar)" filter="url(#outer)"/>
+          <text x="160" y="210" fill="#fff" font-size="160" font-weight="800" text-anchor="middle" font-family="SF Pro Display, -apple-system, system-ui, Inter, Arial, Helvetica, sans-serif" letter-spacing="6">IL</text>
+        </g>
+
+        <!-- Wordmark -->
+        <g transform="translate(380 74)" fill="#fff" font-family="SF Pro Display, -apple-system, system-ui, Inter, Arial, Helvetica, sans-serif">
+          <text x="0" y="96" font-size="112" font-weight="700" letter-spacing=".5">I.Lakieriev</text>
+          <g opacity=".9">
+            <rect x="2" y="132" width="300" height="10" rx="5" fill="url(#bar)"/>
+            <text x="0" y="184" font-size="64" font-weight="600" opacity=".95" style="letter-spacing:.5px">DevOps</text>
+          </g>
+        </g>
+      </svg>
+      <div class="note">Wordmark for website headers, CV, and LinkedIn banners.</div>
+    </div>
+  </div>
+
+  <p class="note">Tip: To change the palette, edit the <code>--c1</code> and <code>--c2</code> CSS variables at the top. For a darker Apple look, try <code>#0a84ff → #64d2ff</code>.</p>
+</div>
+</body>
+</html>
