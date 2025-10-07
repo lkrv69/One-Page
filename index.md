@@ -18,7 +18,7 @@ description: "DevOps Engineer: CI/CD, Kubernetes, Terraform, AWS/GCP."
 
 ## Experienced With
 **Docker**, **Kubernetes**, **Terraform**, **AWS/GCP/Azure/Rackspace/Hybrid/Private Cloud/Dedicated/On-Prem Servers
-**, monitoring (**Prometheus**, **Grafana**), and CI/CD using **GitLab CI** and **GitHub Actions**.
+**, monitoring (**Prometheus**, **Grafana**, **Site24x7**, **ELK**), and CI/CD using **GitLab CI,** **Jenkins** and **GitHub Actions**.
 
 ## What I Do
 - **CI/CD**: build and optimize pipelines, reduce release times, and improve stability.
