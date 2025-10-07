@@ -19,7 +19,7 @@ The best way to reach me is by **email** or **Telegram** — I usually reply wit
 <small>Email works best for project briefs and detailed questions. Telegram is ideal for quick coordination.</small>
 
 ### Social Profiles
-- **GitHub:** [github.com/incognito](https://github.com/incognito)
+- **Telegram:** [github.com/incognito](https://t.me/Ivan_Lakieriev)
 - **LinkedIn:** [linkedin.com/in/lakieriev](https://linkedin.com/in/lakieriev)
 
 ---
