@@ -14,13 +14,13 @@ The best way to reach me is by **email** or **Telegram** — I usually reply wit
 
 ## 📫 Primary Channels
 - **Email:** [ivan@lkrv69.com](mailto:ivan@lkrv69.com)
-- **Telegram:** [@lkrv69](https://t.me/lkrv69)
+- **Instagram:** [@cod3devOps](https://instagram.com/cod3devOps)
 
 <small>Email works best for project briefs and detailed questions. Telegram is ideal for quick coordination.</small>
 
 ### Social Profiles
-- **Telegram:** [github.com/incognito](https://t.me/Ivan_Lakieriev)
-- **LinkedIn:** [linkedin.com/in/lakieriev](https://linkedin.com/in/lakieriev)
+- **Telegram:** [Telegram](https://t.me/Ivan_Lakieriev)
+- **LinkedIn:** [LinkedIn](https://linkedin.com/in/lakieriev)
 
 ---
 
