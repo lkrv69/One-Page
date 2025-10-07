@@ -25,7 +25,7 @@ The best way to reach me is by **email** or **Telegram** — I usually reply wit
 ---
 
 ## 📅 Book a Call
-Schedule a 30-minute introduction call: <https://calendly.com/yourusername/30min>
+Schedule a 30-minute introduction call: <https://calendly.com/lakerev96/30min>
 
 <details>
   <summary><strong>What to include when booking</strong></summary>
