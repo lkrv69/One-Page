@@ -13,7 +13,7 @@ description: "DevOps Engineer: CI/CD, Kubernetes, Terraform, AWS/GCP."
       <a class="btn secondary" href="/about/">About me</a>
     </div>
   </div>
-  <img class="hero-ill" src="/assets/img/hero-devops.svg" alt="DevOps illustration">
+  <img class="hero-ill" src="/assets/img/devops.webp" alt="DevOps illustration">
 </div>
 
 ## Experienced With
