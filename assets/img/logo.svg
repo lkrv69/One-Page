@@ -1,102 +1,26 @@
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>I.Lakieriev DevOps — minimal Apple‑style logo</title>
-<style>
-  :root{
-    /* Tune these to match your site */
-    --bg0:#0b0f14;      /* page bg preview */
-    --ink:#ffffff;      /* text color */
-    --ink-soft:#d6e4ff; /* optional softer text */
-    --g1:#0a84ff;       /* primary start */
-    --g2:#64d2ff;       /* primary end   */
-    --icon-bg-1:#111418;/* icon gradient start (graphite) */
-    --icon-bg-2:#1b1f23;/* icon gradient end   */
-  }
-  html,body{margin:0;background:var(--bg0);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter",system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-  .wrap{max-width:1200px;margin:40px auto;padding:24px}
-  h1{font-weight:700;letter-spacing:.2px;margin:0 0 12px;font-size:26px}
-  p{opacity:.8;margin:0 0 24px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
-  .card{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:20px}
-  .card h2{font-size:15px;margin:0 0 12px;font-weight:600;opacity:.9}
-  svg{width:100%;height:auto;display:block}
-  .note{font-size:12px;opacity:.65;margin-top:10px}
-</style>
-</head>
-<body>
-  <div class="wrap">
-    <h1>I.Lakieriev · DevOps — minimal logo set (flat)</h1>
-    <p>Two clean variants tailored for dark Apple‑like UI. No glossy highlights, no drop‑shadows. Edit CSS variables at the top to match your palette.</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 320" role="img" aria-label="I.Lakieriev · DevOps logo">
+  <!-- Transparent background; tuned for dark UIs -->
+  <defs>
+    <linearGradient id="devopsGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a84ff"/>
+      <stop offset="100%" stop-color="#64d2ff"/>
+    </linearGradient>
+  </defs>
 
-    <div class="grid">
-      <!-- A) Flat squircle icon (IL) -->
-      <div class="card">
-        <h2>A) Flat squircle icon</h2>
-        <svg viewBox="0 0 1024 1024" role="img" aria-label="IL icon">
-          <defs>
-            <linearGradient id="iconBg" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="var(--icon-bg-1)"/>
-              <stop offset="100%" stop-color="var(--icon-bg-2)"/>
-            </linearGradient>
-          </defs>
-          <!-- iOS‑style squircle (no shadows) -->
-          <path fill="url(#iconBg)" d="M512 64c-128 0-162 2-206 18a206 206 0 0 0-126 126C164 252 162 286 162 414v196c0 128 2 162 18 206a206 206 0 0 0 126 126c44 16 78 18 206 18s162-2 206-18a206 206 0 0 0 126-126c16-44 18-78 18-206V414c0-128-2-162-18-206a206 206 0 0 0-126-126C674 66 640 64 512 64Z"/>
+  <!-- DevOps infinity symbol -->
+  <g transform="translate(40,16)">
+    <path d="M140 144
+             C140 72 300 72 300 144
+             S460 216 460 144
+             S300 72 300 144
+             S140 216 140 144" 
+          fill="none" stroke="url(#devopsGrad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 
-          <!-- Monogram -->
-          <g font-family="SF Pro Display, -apple-system, system-ui, Inter, Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
-            <text x="512" y="600" font-size="360" fill="var(--ink)">IL</text>
-          </g>
-        </svg>
-        <div class="note">For navbar/avatar. Keep it flat for a modern look; change <code>--icon-bg-1/2</code> for darker/lighter graphite.</div>
-      </div>
-
-      <!-- B) Horizontal wordmark -->
-      <div class="card">
-        <h2>B) Horizontal wordmark</h2>
-        <svg viewBox="0 0 1400 260" role="img" aria-label="I.Lakieriev DevOps wordmark">
-          <defs>
-            <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="var(--g1)"/>
-              <stop offset="100%" stop-color="var(--g2)"/>
-            </linearGradient>
-          </defs>
-
-          <!-- Compact icon at left (flat) -->
-          <g transform="translate(0,20)">
-            <rect x="0" y="0" width="220" height="220" rx="64" fill="url(#accent)"/>
-            <text x="110" y="142" fill="#fff" font-size="110" font-weight="800" text-anchor="middle" font-family="SF Pro Display, -apple-system, system-ui, Inter, Arial, Helvetica, sans-serif">IL</text>
-          </g>
-
-          <!-- Wordmark -->
-          <g transform="translate(260,40)" fill="var(--ink)" font-family="SF Pro Display, -apple-system, system-ui, Inter, Arial, Helvetica, sans-serif">
-            <text x="0" y="80" font-size="96" font-weight="700" letter-spacing=".2">I.Lakieriev</text>
-            <text x="0" y="160" font-size="52" font-weight="600" opacity=".9">DevOps</text>
-            <rect x="0" y="96" width="260" height="6" rx="3" fill="url(#accent)" opacity=".9"/>
-          </g>
-        </svg>
-        <div class="note">Use in header/hero. Gradient bar adds Apple‑ish accent without heavy shadows.</div>
-      </div>
-    </div>
-
-    <div class="card" style="margin-top:24px">
-      <h2>Monochrome variant (for print/emboss)</h2>
-      <svg viewBox="0 0 1024 300" role="img" aria-label="Monochrome logo">
-        <!-- Squircle icon + wordmark in pure white -->
-        <g transform="translate(20,40)" fill="#fff">
-          <rect x="0" y="0" width="180" height="180" rx="48" fill="#fff" opacity=".12"/>
-          <text x="90" y="118" font-size="90" font-weight="800" text-anchor="middle" font-family="SF Pro Display, -apple-system, system-ui, Inter, Arial, Helvetica, sans-serif">IL</text>
-        </g>
-        <g transform="translate(240,60)" fill="#fff" font-family="SF Pro Display, -apple-system, system-ui, Inter, Arial, Helvetica, sans-serif">
-          <text x="0" y="70" font-size="86" font-weight="700">I.Lakieriev</text>
-          <text x="0" y="140" font-size="46" font-weight="600" opacity=".9">DevOps</text>
-        </g>
-      </svg>
-      <div class="note">For stickers, watermark, and dark backgrounds where color isn’t needed.</div>
-    </div>
-
-    <p class="note">Implementation tip: in the site navbar, render the squircle icon at 24–28px; in hero use the horizontal wordmark at 320–480px width. Keep spacing generous for the clean Apple feel.</p>
-  </div>
-</body>
-</html>
+  <!-- Wordmark -->
+  <g transform="translate(540,60)" font-family="SF Pro Display, -apple-system, system-ui, Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" fill="#ffffff">
+    <text x="0" y="88" font-size="104" font-weight="700" letter-spacing=".2">I.Lakieriev</text>
+    <rect x="0" y="102" width="280" height="6" rx="3" fill="url(#devopsGrad)" opacity=".95"/>
+    <text x="0" y="168" font-size="54" font-weight="600" opacity=".92">DevOps</text>
+  </g>
+</svg>
