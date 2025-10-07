@@ -1,75 +1,64 @@
 ---
 title: "Contacts"
 layout: default
-description: "How to reach me"
+description: "Contact Ivan Lakieriev — DevOps Engineer"
+permalink: /contacts/
 ---
 
-# 📇 Contacts
-## 🔗 Быстрые ссылки
-- 📧 **Email:** [ivan@lkrv69.com](mailto:ivan@lkrv.com)
-- ✈ **Telegram:** [@lkrv69](https://t.me/lkrv69)
-- 💼 **LinkedIn:** [linkedin.com/in/lakieriev](https://linkedin.com/in/lakieriev)
-- 🐙 **GitHub:** [github.com/incognito](https://github.com/incognito)
+# 👋 Contact Ivan Lakieriev
 
----
-
-## 🕒 Мой локальный часовой пояс
-<div id="local-time" data-timezone="Europe/Kyiv" style="font-size:1.05rem;">Kyiv</div>
-<small>Если ночь — не обижайтесь, отвечу утром 🙂</small>
+I help teams build efficient CI/CD pipelines, automate infrastructure with Terraform and Ansible, and scale Kubernetes and cloud environments (AWS / Azure / GCP / Hybrid).  
+The best way to reach me is by **email** or **Telegram** — I usually reply within **24 hours** on business days.
 
 ---
 
-## 🗓 Сколько дней я в IT
-<div id="days-in-it" data-start="2021-09-01"></div>
-<small>Start <code>data-start</code>.</small>
+## 📫 Primary Channels
+- **Email:** [ivan@lkrv69.com](mailto:ivan@lkrv69.com)
+- **Telegram:** [@lkrv69](https://t.me/lkrv69)
+
+<small>Email works best for project briefs and detailed questions. Telegram is ideal for quick coordination.</small>
+
+### Social Profiles
+- **GitHub:** [github.com/incognito](https://github.com/incognito)
+- **LinkedIn:** [linkedin.com/in/lakieriev](https://linkedin.com/in/lakieriev)
 
 ---
 
-## 🌦 Погода у меня
-<!-- Замените CITY на свой город латиницей, например Kharkiv -->
-<img alt="local weather" src="https://wttr.in/kyiv?format=%C+%t&lang=ru&Q"
-     style="display:inline-block;padding:.4rem .6rem;border:1px solid #ddd;border-radius:.6rem;font-family:ui-monospace,Menlo,monospace" />
-<small>Обновляется автоматически при загрузке страницы.</small>
+## 📅 Book a Call
+Schedule a 30-minute introduction call: <https://calendly.com/yourusername/30min>
 
----
-
-## 🗺 Где я примерно
-<!-- Координаты можно накинуть в ссылку, а картинку взять со статической карты OSM -->
-<p>
-  <a href="https://www.openstreetmap.org/?mlat=50.004&mlon=36.231#map=11/50.004/36.231" target="_blank" rel="noopener">
-    <img alt="map" src="https://staticmap.openstreetmap.de/staticmap.php?center=50.004,36.231&zoom=10&size=640x240&maptype=mapnik&markers=50.004,36.231,lightblue1"
-         style="width:100%;max-width:680px;border-radius:12px;border:1px solid #e5e7eb" />
-  </a>
-</p>
----
-
-## 💡 Цитата дня
-<blockquote id="quote-box" style="margin:0;border-left:4px solid #e5e7eb;padding:.6rem 1rem;color:#444">
-  Загружаю вдохновение...
-</blockquote>
-<small id="quote-author" style="color:#666"></small>
-
----
-
-## 📨 Невероятно удобный способ написать
-- 🔐 **Анонимно и без логина:** <a href="https://forms.gle/your-google-form" target="_blank" rel="noopener">короткая форма</a>
-- 📅 **Назначить звонок:** <a href="https://calendly.com/yourusername/30min" target="_blank" rel="noopener">выбрать слот на 30 мин</a>
-
----
-
-## 🧩 Если я не отвечаю
 <details>
-  <summary>Возможные причины</summary>
+  <summary><strong>What to include when booking</strong></summary>
   <ul>
-    <li>💤 Сплю — у меня ночь</li>
-    <li>🛠 На созвоне — отвечу после</li>
-    <li>🍕 Обед — 15–20 мин и вернусь</li>
+    <li>Goals and current pain points (2–3 short bullets)</li>
+    <li>Tech stack & environment (cloud/on-prem, CI/CD, IaC)</li>
+    <li>Timeline and budget model (fixed / hourly)</li>
   </ul>
 </details>
 
 ---
 
-## 🔑 PGP (для тех, кто любит приватность)
-<details>
-  <summary>Показать публичный ключ</summary>
+## 🕒 Availability
+<div id="local-time" data-timezone="Europe/Kyiv" style="font-size:1.05rem;font-weight:600;">Kyiv time (EET)</div>
+<small>Typical response hours: 09:00–19:00 (EET), Monday–Friday.</small>
 
+<script>
+(function () {
+  try {
+    const el = document.getElementById('local-time');
+    const tz = el?.dataset?.timezone || Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const now = new Date();
+    const fmt = new Intl.DateTimeFormat([], { hour: '2-digit', minute: '2-digit', timeZone: tz });
+    if (el) el.textContent = `${tz} — ${fmt.format(now)}`;
+  } catch (e) {}
+})();
+</script>
+
+---
+
+## 🔐 Security
+- Never share production secrets over email or Telegram.  
+  Use your **secret manager** (Vault / Infisical / 1Password) or a protected channel.
+- **PGP (optional):**
+  <details>
+    <summary>Show public key</summary>
