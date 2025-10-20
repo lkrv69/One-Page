@@ -4,221 +4,144 @@ layout: default
 description: "About Ivan Lakieriev"
 ---
 
-# About Me
-
-I’m a DevOps Engineer with 4+ years building cloud infrastructure, CI/CD pipelines, and automation for high-traffic products. I like clean platforms that make deployments boring - in a good way.
-
-**Stack**: Docker, Kubernetes, Helm, Terraform, Ansible, AWS/GCP/Azure, Prometheus, Grafana, GitHub Actions, GitLab CI.
-
-<style>
-  /* SCOPED THEME — only inside .about-scope */
-  .about-scope{
-    --bg:#ffffff;
-    --fg:#111827;
-    --muted:#4b5563;
-    --line:#e5e7eb;
-    --accent:#2563eb;
-    --accent-2:#7c3aed;
-    --card:#f9fafb;
-  }
-  :where(html[data-theme="dark"]) .about-scope{
-    --bg:#0b0e14; --fg:#e6e6e6; --muted:#9aa3b2;
-    --line:#1f2733; --accent:#6ea8fe; --accent-2:#9b8cff; --card:#111827;
-  }
-  @media (prefers-color-scheme: dark){
-    /* fallback if нет data-theme */
-    .about-scope:not(:where(html[data-theme])){
-      --bg:#0b0e14; --fg:#e6e6e6; --muted:#9aa3b2;
-      --line:#1f2733; --accent:#6ea8fe; --accent-2:#9b8cff; --card:#111827;
-    }
-  }
-
-  .about-scope{ background:var(--bg); color:var(--fg); }
-
-  /* Metrics */
-  .about-scope .metrics{ display:grid; gap:.75rem; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); margin:1rem 0 1.5rem }
-  .about-scope .metric{ border:1px solid var(--line); background:var(--card); border-radius:.75rem; padding:.8rem 1rem }
-  .about-scope .metric .n{ font-weight:800; font-size:1.1rem }
-  .about-scope .metric .t{ color:var(--muted); font-size:.9rem }
-
-  /* Section title */
-  .about-scope .section-title{ font-weight:800; letter-spacing:.02em; margin:1.25rem 0 .5rem }
-
-  /* Timeline */
-  .about-scope .timeline{ position:relative; margin:1.5rem 0 2.25rem }
-  .about-scope .timeline::before{ content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background:var(--line) }
-  .about-scope .t-item{ position:relative; margin:0 0 1.25rem 0; padding-left:1.75rem }
-  .about-scope .t-item::before{
-    content:""; position:absolute; left:6px; top:.55rem; width:10px; height:10px; border-radius:999px;
-    background:var(--accent-2); box-shadow:0 0 0 4px color-mix(in srgb, var(--accent-2), transparent 80%);
-  }
-  .about-scope .t-year{ font-weight:700; color:var(--accent); font-size:.95rem; letter-spacing:.02em }
-  .about-scope .t-head{ font-weight:700; margin:.2rem 0 .35rem 0 }
-  .about-scope .t-body{ color:var(--muted); line-height:1.6 }
-  .about-scope .t-body ul{ margin:.35rem 0 0 0; padding-left:1rem }
-  .about-scope .t-body li{ margin:.15rem 0 }
-
-  /* Skills */
-  .about-scope .skills{ display:grid; gap:.5rem; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) }
-  .about-scope .badge{ border:1px solid var(--line); background:var(--card); padding:.6rem .8rem; border-radius:.6rem }
-</style>
-
-<section class="about-scope">
-
-  <div class="metrics">
-    <div class="metric"><div class="n">35% faster</div><div class="t">pipeline rebuilds after CI redesign</div></div>
-    <div class="metric"><div class="n">0 downtime</div><div class="t">blue-green & canary releases</div></div>
-    <div class="metric"><div class="n">24/7</div><div class="t">SLO/SLI monitoring & alerts</div></div>
+<section class="about-page">
+  <div class="about-hero">
+    <div class="intro">
+      <p class="section-label">About</p>
+      <h1>DevOps with calm confidence.</h1>
+      <p class="lead">I’m Ivan Lakieriev — a DevOps engineer from Kharkiv who builds delivery platforms that feel effortless for product teams. My work blends resilient infrastructure, clear observability, and cost-aware operations so releases stay predictable even when everything around us changes.</p>
+      <div class="signature">
+        <span>Kharkiv, Ukraine</span>
+        <span>DevOps Engineer · SRE mindset</span>
+      </div>
+    </div>
+    <aside class="about-hero-card">
+      <h2>How I help teams ship calmly</h2>
+      <p>I design cloud foundations, CI/CD, and observability that scale without drama. The goal is to keep engineers in flow and stakeholders confident in every deploy.</p>
+      <div class="chip-list">
+        <span>Cloud landing zones</span>
+        <span>Progressive delivery</span>
+        <span>Unified telemetry</span>
+        <span>Cost governance</span>
+      </div>
+      <p>When incidents happen, we already have playbooks, rollbacks, and clear signals to respond in minutes.</p>
+    </aside>
   </div>
 
-  <h2 class="section-title">My Journey</h2>
-
-  <div class="timeline">
-    <div class="t-item">
-      <div class="t-year">Sievierodonetsk → Kharkiv</div>
-      <div class="t-head">Early years - learning to work and persist</div>
-      <div class="t-body">
-        I grew up in Sievierodonetsk and moved to Kharkiv, taking any job that kept the plan alive.
-        <ul>
-          <li>Construction sites and helper shifts - discipline, safety, teamwork.</li>
-          <li>Supermarket floor - pace, process, responsibility for the end result.</li>
-          <li>Climbing wall instructor in Gorky Park - coaching mindset and calm under pressure.</li>
-          <li>Sawmill shifts - routine, maintenance, and respect for systems that must not fail.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="t-item">
-      <div class="t-year">Czech Republic</div>
-      <div class="t-head">Factory work to fund the dream</div>
-      <div class="t-body">
-        When money was tight, I left to work in factories. Survival first, but I kept studying and building on the side.
-        <ul>
-          <li>Process thinking - repeatable steps, measurable output.</li>
-          <li>Shift discipline - deliver even when you’re tired.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="t-item">
-      <div class="t-year">Side projects</div>
-      <div class="t-head">15 years of tinkering and admin work</div>
-      <div class="t-body">
-        Nights and weekends went into running online services.
-        <ul>
-          <li>Lineage 2 servers - Linux admin, backups, anti-cheat, uptime obsession.</li>
-          <li>Chats & gaming forums - moderation, migrations, SSL, DNS, mail.</li>
-          <li>First infra scripts - bash, cron, small monitoring and on-call habits.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="t-item">
-      <div class="t-year">IT break-in</div>
-      <div class="t-head">From hobby admin to systems engineer</div>
-      <div class="t-body">
-        Persistence paid off - I joined my dream company and moved to production-grade infrastructure.
-        <ul>
-          <li>CI/CD foundations - pipelines, artifacts, rollbacks, review apps.</li>
-          <li>IaC mindset - reproducible envs, versioned changes, peer reviews.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="t-item">
-      <div class="t-year">Since 2022</div>
-      <div class="t-head">War at home - reliability under uncertainty</div>
-      <div class="t-body">
-        I stayed in Ukraine and kept building. Reliable systems in unreliable conditions - that’s the job.
-        <ul>
-          <li>Risk reduction - blue-green, canary, feature flags.</li>
-          <li>Observability - SLO/SLI, actionable alerts, fast MTTR.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="t-item">
-      <div class="t-year">Today</div>
-      <div class="t-head">DevOps for high-traffic products</div>
-      <div class="t-body">
-        Cloud infra, CI/CD and monitoring focused on speed, safety, and cost awareness.
-        <ul>
-          <li>Cost posture - right-sizing, caching, autoscaling policies.</li>
-          <li>Developer experience - paved roads, templates, docs.</li>
-        </ul>
-      </div>
-    </div>
+  <div class="about-metrics">
+    <article class="about-metric">
+      <span class="number">4+ years</span>
+      <span class="caption">Running production-grade infrastructure for high-traffic products.</span>
+    </article>
+    <article class="about-metric">
+      <span class="number">35% faster</span>
+      <span class="caption">Lead pipeline rebuilds that cut build time while adding progressive delivery controls.</span>
+    </article>
+    <article class="about-metric">
+      <span class="number">120+ services</span>
+      <span class="caption">Unified logging, tracing, and SLO dashboards so teams share the same truth.</span>
+    </article>
   </div>
 
-  <h2 class="section-title">Skills</h2>
-  <div class="skills">
-    <div class="badge">Docker · Kubernetes · Helm</div>
-    <div class="badge">Terraform · Ansible</div>
-    <div class="badge">AWS · GCP · Azure</div>
-    <div class="badge">Prometheus · Grafana</div>
-    <div class="badge">GitHub Actions · GitLab CI</div>
-    <div class="badge">Blue-green · Canary · SLO/SLI</div>
+  <div class="about-panels">
+    <article class="about-panel">
+      <h3>Delivery feels effortless</h3>
+      <p>I craft pipelines with cache-aware runners, preview environments, and release policies so changes move quickly without sacrificing control.</p>
+      <ul>
+        <li>Blueprint CI/CD templates across teams</li>
+        <li>Feature flag orchestration and staged rollouts</li>
+        <li>Rollback strategies rehearsed and automated</li>
+      </ul>
+    </article>
+    <article class="about-panel">
+      <h3>Platforms with empathy</h3>
+      <p>DevEx matters. I build paved roads, docs, and guardrails so engineers create without fighting infrastructure.</p>
+      <ul>
+        <li>Self-service environments with GitOps</li>
+        <li>Security and compliance built into workflows</li>
+        <li>Cost insights surfaced right where teams decide</li>
+      </ul>
+    </article>
+    <article class="about-panel">
+      <h3>Operational clarity</h3>
+      <p>Reliability isn’t an afterthought — observability and incident response come baked in from day one.</p>
+      <ul>
+        <li>SLO design with executive and squad buy-in</li>
+        <li>Actionable telemetry across infra and apps</li>
+        <li>Incident command playbooks that shorten MTTR</li>
+      </ul>
+    </article>
   </div>
 
+  <div class="about-journey">
+    <div class="journey-header">
+      <p class="section-label">Trajectory</p>
+      <h2>Craft built through real-world grit</h2>
+      <p class="lead">Every step sharpened the way I design systems — from keeping factories running to orchestrating multi-cloud platforms.</p>
+    </div>
+    <ol class="journey-timeline">
+      <li>
+        <span class="year">Sievierodonetsk → Kharkiv</span>
+        <h3>Learning to keep the plan alive</h3>
+        <p>Construction sites, retail shifts, climbing instruction, even sawmills — early jobs taught discipline, safety, and respect for systems that must not fail.</p>
+      </li>
+      <li>
+        <span class="year">Czech Republic</span>
+        <h3>Factory shifts to fund the dream</h3>
+        <p>Process thinking and repeatable quality came from long nights on the line while studying automation on the side.</p>
+      </li>
+      <li>
+        <span class="year">Side projects</span>
+        <h3>15 years of tinkering with live services</h3>
+        <p>Running game servers and communities demanded Linux admin work, backups, migrations, and on-call habits long before it was my job.</p>
+      </li>
+      <li>
+        <span class="year">IT break-in</span>
+        <h3>From hobby admin to systems engineer</h3>
+        <p>Joined my dream company and moved into production delivery: CI/CD foundations, infrastructure-as-code, and shared deployment patterns.</p>
+      </li>
+      <li>
+        <span class="year">Since 2022</span>
+        <h3>Reliability under uncertainty</h3>
+        <p>Staying in Ukraine during the war reinforced my focus on resilient rollouts, observability, and calm incident response.</p>
+      </li>
+      <li>
+        <span class="year">Today</span>
+        <h3>DevOps for high-traffic products</h3>
+        <p>I lead cloud infrastructure, delivery, and monitoring for teams that need both speed and stability.</p>
+      </li>
+    </ol>
+  </div>
+
+  <div class="about-skills">
+    <article class="skill-group">
+      <h3>Cloud & IaC</h3>
+      <ul>
+        <li>Terraform, Helm, Kubernetes</li>
+        <li>AWS, GCP, Azure, hybrid footprints</li>
+        <li>Landing zones, policy-as-code, GitOps</li>
+      </ul>
+    </article>
+    <article class="skill-group">
+      <h3>Automation & Delivery</h3>
+      <ul>
+        <li>GitHub Actions, GitLab CI, Jenkins</li>
+        <li>Reusable pipelines, runners, caching layers</li>
+        <li>Blue/green, canary, feature flag rollouts</li>
+      </ul>
+    </article>
+    <article class="skill-group">
+      <h3>Observability & Ops</h3>
+      <ul>
+        <li>Prometheus, Grafana, ELK, tracing</li>
+        <li>SLO/SLI governance and alert tuning</li>
+        <li>Incident command and post-incident practice</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="about-closing">
+    <p>I love collaborating with teams that want both velocity and trust. If that’s you, let’s design delivery that feels unmistakably premium.</p>
+    <a class="btn" href="/contacts/">Let’s talk</a>
+  </div>
 </section>
-
-
-<style>
-  /* === reveal on scroll === */
-  .about-scope .reveal{
-    opacity:0; transform:translateY(12px);
-    transition:opacity .5s ease, transform .5s ease;
-    will-change: opacity, transform;
-  }
-  .about-scope .reveal.is-visible{
-    opacity:1; transform:translateY(0);
-  }
-  /* Небольшой «стаггер» через CSS-переменную */
-  .about-scope .reveal{ transition-delay: var(--d, 0ms); }
-
-  /* Если пользователь просит уменьшить анимации — отключаем */
-  @media (prefers-reduced-motion: reduce){
-    .about-scope .reveal{ opacity:1 !important; transform:none !important; transition:none !important; }
-  }
-</style>
-
-<script>
-  (function(){
-    // если движок вырезает <script>, помести этот блок в layout.
-    const root = document.querySelector('.about-scope');
-    if(!root) return;
-
-    // элементы для анимации
-    const targets = [
-      ...root.querySelectorAll('.t-item'),
-      ...root.querySelectorAll('.metric'),
-      ...root.querySelectorAll('.badge')
-    ];
-
-    // навешиваем класс reveal и задаём «стаггер» в рамках каждого контейнера
-    const setStagger = (nodes, step=80) => nodes.forEach((el, i) => {
-      el.classList.add('reveal');
-      el.style.setProperty('--d', (i*step) + 'ms');
-    });
-
-    // группируем по секциям для красивого появления
-    const groups = [
-      root.querySelectorAll('.metric'),
-      root.querySelectorAll('.timeline .t-item'),
-      root.querySelectorAll('.skills .badge')
-    ];
-    groups.forEach(g => setStagger([...g]));
-
-    // IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target); // показываем один раз
-        }
-      });
-    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
-
-    targets.forEach(t => io.observe(t));
-  })();
-</script>
