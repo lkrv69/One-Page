@@ -115,3 +115,13 @@ html[data-theme="dark"] .hero-ill{box-shadow:0 20px 60px rgba(0,0,0,.35)}
   .icon-btn{width:34px; height:34px}
   .markdown-body p, .markdown-body li{font-size:17px}
 }
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 4px;
+  background: #666;
+  transition: background 0.3s ease;
+}
