@@ -56,5 +56,28 @@
       © 2021 - {{ site.time | date: "%Y" }} · Ivan Lakieriev · Ukraine 🇺🇦
     </div>
   </footer>
+<script>
+const services = [
+  { id: "gitlab-dot", url: "https://git.lkrv69.com" },
+  { id: "vpn-dot", url: "https://vpn.lkrv69.com" },
+  { id: "wiki-dot", url: "https://wiki.lkrv69.com" }
+];
+
+async function checkAll() {
+  for (let s of services) {
+    const dot = document.getElementById(s.id);
+
+    try {
+      await fetch(s.url, { method: "GET", mode: "no-cors" });
+      dot.style.background = "#2ecc71"; // зелёный
+    } catch {
+      dot.style.background = "#e74c3c"; // красный
+    }
+  }
+}
+
+checkAll();
+setInterval(checkAll, 20000);
+</script>
 </body>
 </html>
